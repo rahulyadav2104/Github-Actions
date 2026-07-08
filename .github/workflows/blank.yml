@@ -1,11 +1,8 @@
-name: Hello World
-
+name: hello word
 on: workflow_dispatch
-
 jobs:
   hello:
     runs-on: ubuntu-latest
-
-    steps:
-      - name: Hello Step
-        run: echo "Welcome to GitHub Actions"
+    steps: 
+      - name: hello step
+        run: echo "welcome "

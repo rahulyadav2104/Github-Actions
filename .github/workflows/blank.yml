@@ -5,6 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: hello step
-        run: |
-          echo "My Info ,${{vars.My_NAME}}"
+        run: echo "My Info ,${{vars.My_NAME}}"
  

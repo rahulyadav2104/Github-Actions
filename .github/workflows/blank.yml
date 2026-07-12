@@ -1,18 +1,10 @@
 name: hello word
-on: 
-  push:
-    branches:
-      - main
-      - develop
-      - 'release/**'
-  pull_request:
-    branches:
-      - main
+on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
       - name: hello step
         run: |
-          echo "branch created"
+          echo "My Info ,${{vars.My_name}}"
  

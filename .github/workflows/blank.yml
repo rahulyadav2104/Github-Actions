@@ -1,9 +1,9 @@
 name: hello word
-on: workflow_dispatch
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
       - name: hello step
-        run: echo "My Info ,${{vars.My_NAME}}"
+        run: echo "My Info ,${{secrets.Pass}}"
  
